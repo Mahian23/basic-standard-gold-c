@@ -65,7 +65,7 @@ switch (operator)
     {
     printf("Number too large to calculate!");            //stops big numbers from factorializing themselves!//
     break;
-    break;
+    break;                                               //this break is so powerful it stops the code twice.//
     }
     else
     {
