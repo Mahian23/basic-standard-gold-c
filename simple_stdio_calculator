@@ -1,9 +1,9 @@
-//What's a calculator? Maybe something that "counts" some numbers. But, aren't everything made of numbers?       //
-//Even "Hi!" is actually "72 73 33", thus becoming a part of the ever growing number system!                     //
-//                                                                                                               //
-//This simple_calculator is a tool of mathematical destiny which not only adds, subtracts, multiplies and divides//
-//(without conquering ofcourse) numbers, but actually even does factorials (though it plays with them a little   //
-//before doing so!) staring directly at their eyes, it is sure to return a value before the stock piles!         //
+//What's a calculator? Maybe something that "counts" some numbers. But, aren't everything made of numbers?      //
+//Even "Hi!" is actually "72 73 33", thus becoming a part of the ever growing number system!                    //
+//                                                                                                              //
+//This simple_stdio_calculator is a tool of mathematical destiny which not only adds, subtracts, multiplies and //
+//divides (without conquering ofcourse) numbers, but actually even does factorials (though it plays with them a //
+//little before doing so!) staring directly at their eyes, it is sure to return a value before the stock piles! //
 
 #include <stdio.h>
 int main(void)
