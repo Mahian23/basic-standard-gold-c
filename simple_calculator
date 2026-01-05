@@ -1,0 +1,84 @@
+//What's a calculator? Maybe something that "counts" some numbers. But, aren't everything made of numbers?       //
+//Even "Hi!" is actually "72 73 33", thus becoming a part of the ever growing number system!                     //
+//                                                                                                               //
+//This simple_calculator is a tool of mathematical destiny which not only adds, subtracts, multiplies and divides//
+//(without conquering ofcourse) numbers, but actually even does factorials (though it plays with them a little   //
+//before doing so!) staring directly at their eyes, it is sure to return a value before the stock piles!         //
+
+#include <stdio.h>
+int main(void)
+{
+char operator;
+double num1, num2, result;
+int factorial;
+
+printf("What do you want to do? (+, - , *, /, !)\nAns: ");
+scanf(" %c", &operator);
+
+if(operator == '!')
+{
+printf("Enter Number: ");
+scanf("%d", &factorial);
+}
+else
+{
+printf("Enter Number 1: ");
+scanf("%lf", &num1);
+
+printf("Enter Number 2: ");
+scanf("%lf", &num2);
+}
+
+switch (operator)
+{
+    case '+':
+    result = (num1 + num2);
+    printf("Result is %lf\n", result);
+    break;
+    case '-':
+    result = (num1 - num2);
+    printf("Result is %lf\n", result);
+    break;
+    case '*':
+    result = (num1 * num2);
+    printf("Result is %lf\n", result);
+    break;
+    case '/':
+    if(num2 == 0)
+    {
+        printf("Can't devide by 0!");                   //stops 0 from dividing the number!//
+        break;
+    }
+    else
+    {
+        result = (num1 / num2);
+        printf("Result is %lf\n", result);
+        break;
+    }
+    case '!':
+    if (factorial < 0)
+    {
+    printf("Negative numbers don't have factorial!");    //stops negative numbers from factorializing themselves!//
+    break;
+    }
+    else if (factorial > 170)
+    {
+    printf("Number too large to calculate!");            //stops big numbers from factorializing themselves!//
+    break;
+    break;
+    }
+    else
+    {
+    result = 1;
+    for(int i = 1; i <= factorial; i++)
+    {
+        result *= i;
+    }
+    printf("Result: %.lf\n", result);
+    break;
+    }
+    default:
+    printf("%c isn't a valid!\n", operator);
+}
+return 0;
+}
