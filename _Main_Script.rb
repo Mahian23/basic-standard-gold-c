@@ -7,7 +7,7 @@ end
 #===============================================================================#
 # Speed-up config
 #===============================================================================#
-SPEEDUP_STAGES = [1, 1.5, 2]
+SPEEDUP_STAGES = [1, 4, 8]
 $GameSpeed = 0
 $CanToggle = true
 $RefreshEventsForTurbo = false
